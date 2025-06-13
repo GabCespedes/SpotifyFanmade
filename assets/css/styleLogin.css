@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient(to bottom, #272727, #000 );
+    height: 100vh;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+#login .boxLogin{
+    background-color: #121212;
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #1ed75f85;
+}
+#logoSpotify{
+    margin-top: 45px;
+    font-size: 42px;
+    color: #1ED760;
+}
+#login .boxLogin h1{
+    color: white;
+    font-size: 2rem;
+}
+/* =========== divider =============== */
+.divider{
+    margin-top:5%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 1px;
+    background-color: #4d4d4d66;
+
+  }
+/* ================== contas ======================== */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btnFace, .btnGoogle, .btnApple, .btnNumero {
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50px;
+  height: 30%;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 10px;
+  transition:ease-in-out 300ms;
+}
+
+.btnFace i {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 10px;
+}
+.btnFace:hover {
+  background-color: #039ae572;
+  background-image: linear-gradient(to top right, #0162e079,#18adfe79);
+  color: #ffffff;
+}
+
+.btnGoogle i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 22px;
+}
+.btnGoogle:hover {
+  background-color: #e503036e;
+  background-image: linear-gradient(to top right, #e001016e,#fe181878);
+  color: #ffffff;
+}
+
+.btnApple i {
+  font-size: 1.5rem;
+  margin-right: 35px;
+  color: #ffffff;
+}
+.btnApple:hover {
+  background-color: #bcbcbc6d;
+  background-image: linear-gradient(to top right, #ffffff72,#c9c8c877);
+  color: #000;
+}
+
+.btnNumero i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.btnNumero:hover {
+  background-color: #1ED760;
+  color: #000;
+}
+/* ===================== form ====================== */
+.form {
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"] {
+  border-radius: 0.5rem;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  background:transparent;
+  outline: 1px solid var(--bg-dark);
+  color: white;
+}
+
+.form input[type="email"]:hover{
+  outline: 2px solid var(--clr);
+}
+
+.form input[type="email"]:focus{
+  outline: 3px solid var(--clr);
+  background-color: #c7c5c5;
+  color: #000;
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 700;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+  background-color: #1ED760;
+  color: #000;
+}
+
+.span {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+.span a {
+  color: var(--bg-dark);
+  font-weight: 600;
+}
+.span a:hover {
+  color: var(--clr);
+}
+
+/* ===================== footer ============== */
+
+.endPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  color: #ffffff33;
+  font-size: 0.8rem;
+}
+.endPage a {
+  color: #ffffff33;
+  text-decoration: none;
+  font-weight: 600;
+}
+#mike:hover {
+  color: #5e0375;
+}
+#gab:hover{
+  color: #1aff006f;
+}
