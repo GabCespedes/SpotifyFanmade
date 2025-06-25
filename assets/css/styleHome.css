@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(to bottom, #313131, #121212, #101010, #121212);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ============ sidebar ==================== */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #000000;
+  padding: 25px;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .navigation ul li {
+  margin: 20px 0;
+}
+.sidebar .navigation ul li a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  transition:ease-in-out 300ms
+}
+.sidebar .navigation ul li a:hover{
+  color: #136b32;
+  font-size: 35px;
+}
+
+.sidebar .navigation ul li .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* ==========main================ */
+
+.main-container {
+  padding-top: 5rem;
+  margin-left: 110px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+/* ================= topbar ============= */
+
+.topbar {
+  display: flex;
+  justify-content:flex-end;
+  background: linear-gradient(to right, #000000, #001a09df, #000000);
+  padding: 14px 5px;
+  width: 100%;
+  top: auto;
+  z-index: 1;
+  position: fixed !important;
+}
+.topbar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+}
+.topbar .navbar ul {
+  list-style: none;
+}
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition:ease-in-out 300ms
+}
+.topbar .navbar ul li a:hover{
+  color:  #ffffff;
+  font-size: 15px;
+}
+.topbar .navbar ul li.divider {
+  color: #ffffff97;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+.topbar .navbar button {
+  background-color: #1db954;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition:ease-in-out 300ms
+}
+.topbar .navbar button:hover{
+  background-color: #136b32;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+/* =========== playlist ============== */
+
+.spotify-playlists {
+  margin-left: 0px;
+  padding: 20px;
+}
+#primeiro{
+  margin-top: 200px;
+}
+.spotify-playlists a {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.spotify-playlists a:hover {
+  text-decoration: underline;
+}
+.spotify-playlists .list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  margin: 3px;
+  width: 160px;
+  padding: 15px;
+  background:transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.spotify-playlists .list .item a {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+.spotify-playlists .list .item a:hover {
+  text-decoration: underline;
+}
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* ================== sobre ====================== */
+.sobre {
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+ margin: 30px 0px;
+}
+.sobre .info {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sobre .info h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sobre .info .textSobre {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ============ social ================ */
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper .facebook:hover{
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover{
+  background: #252525;
+  color: #fff;
+}
+
+.wrapper .instagram:hover{
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+  color: #fff;
+}
+
+
+.divider {
+  width: 99%;
+  height: 1px;
+  background-color: #636363;
+  margin: 70px 0px 0px;
+}
+.ano p{
+  color: #989898;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* ================ esconde scrow horizontal ============================= */
+
+body {
+  overflow-x: hidden;
+}
+/* ============== premium ===================== */
+
+.preview {
+  position: fixed;
+  margin: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.preview h6 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+}
