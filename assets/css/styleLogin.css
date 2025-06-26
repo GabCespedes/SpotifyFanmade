@@ -30,6 +30,7 @@ body{
 #login .boxLogin h1{
     color: white;
     font-size: 2rem;
+    font-weight: 700;
 }
 /* =========== divider =============== */
 .divider{
