@@ -132,9 +132,6 @@ body {
   margin-left: 0px;
   padding: 20px;
 }
-#primeiro{
-  margin-top: 200px;
-}
 .spotify-playlists a {
   color: #ffffff;
   font-size: 25px;
@@ -331,3 +328,264 @@ body {
   border-radius: 40px;
   cursor: pointer;
 }
+
+/* Responsividade geral */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 48px;
+    padding: 10px;
+  }
+  .main-container {
+    margin-left: 60px;
+    padding-top: 4rem;
+  }
+  .spotify-playlists {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+  .main-container {
+    margin-left: 0;
+    padding-top: 3.5rem;
+  }
+  .topbar {
+    padding: 8px 2px;
+  }
+  .spotify-playlists {
+    padding: 6px;
+  }
+  .spotify-playlists .list,
+  .carrossel {
+    gap: 8px;
+  }
+  .spotify-playlists .list .item,
+  .carrossel .item {
+    min-width: 120px;
+    max-width: 120px;
+    width: 120px;
+    padding: 8px;
+  }
+  .spotify-playlists .list .item img,
+  .carrossel .item img {
+    width: 80px;
+    height: 80px;
+  }
+  .spotify-playlists .list .item a,
+  .carrossel .item a {
+    font-size: 12px;
+  }
+  .spotify-playlists .list .item p,
+  .carrossel .item p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: #181818;
+    font-size: 13px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-container {
+    margin-left: 0;
+    padding: 0 2vw 60px 2vw;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+  }
+  .topbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 6px 2vw;
+    background: #181818;
+    z-index: 10;
+    min-height: 48px;
+    box-shadow: 0 2px 8px #00000033;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topbar .navbar {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .topbar .navbar ul {
+    padding: 0;
+    margin: 0;
+  }
+  .topbar .navbar ul li {
+    margin: 0 4px;
+  }
+  .topbar .navbar button {
+    padding: 8px 16px;
+    font-size: 13px;
+    margin-left: 8px;
+    border-radius: 20px;
+  }
+  .spotify-playlists {
+    padding: 8px 0;
+    margin: 0;
+  }
+  .spotify-playlists a,
+  .spotify-playlists h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+  .spotify-playlists .list,
+  .carrossel {
+    display: flex !important;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .spotify-playlists .list::-webkit-scrollbar,
+  .carrossel::-webkit-scrollbar {
+    display: none;
+  }
+  .spotify-playlists .list .item,
+  .carrossel .item {
+    min-width: 110px;
+    max-width: 110px;
+    width: 110px;
+    padding: 6px;
+    background: #232323;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: 0 2px 8px #00000022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spotify-playlists .list .item img,
+  .carrossel .item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    object-fit: cover;
+  }
+  .spotify-playlists .list .item a,
+  .carrossel .item a {
+    font-size: 0.95rem;
+    margin: 4px 0 2px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  .spotify-playlists .list .item p,
+  .carrossel .item p {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    text-align: center;
+    margin: 0;
+  }
+  .spotify-playlists .list .item .play,
+  .carrossel .item .play {
+    margin-bottom: 4px;
+    position: static;
+  }
+  .spotify-playlists .list .item .play .fa,
+  .carrossel .item .play .fa {
+    position: static;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #1db954;
+    border-radius: 50%;
+    opacity: 1;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    box-shadow: 0 2px 8px #00000033;
+    transition: none;
+    transform: none;
+  }
+  .spotify-playlists .list .item:hover,
+  .carrossel .item:hover {
+    background: #282828;
+  }
+  .divider {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+  .sobre {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    gap: 10px;
+  }
+  .sobre .info {
+    margin: 8px 0;
+  }
+  .sobre .info h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .sobre .info .textSobre {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .wrapper {
+    padding-top: 10px;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .wrapper .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  .ano p {
+    font-size: 0.85rem;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .preview {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 10px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    z-index: 20;
+    box-shadow: 0 -2px 8px #00000033;
+  }
+  .preview h6 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .preview p {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  .preview button {
+    width: 100%;
+    margin-top: 4px;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-radius: 24px;
+  }
+}
+
+/* ...existing code... */
